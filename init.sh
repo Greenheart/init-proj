@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Small script that automatically sets up the development environment for my current project
+# Simple script that automatically sets up the development environment for my current project
 # saves about 15 seconds * opening projects 2 times / day * 4 days / week = valuable time! ;)
 
 go2cpd () {
