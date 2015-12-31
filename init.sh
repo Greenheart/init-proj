@@ -23,4 +23,4 @@ nohup firefox localhost:3000 >/dev/null 2>&1 &
 go2cpd
 meteor
 
-exit 1
+exit 0
