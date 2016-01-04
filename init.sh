@@ -3,6 +3,11 @@
 # Small script that automatically sets up the development environment for my current project
 # saves about 15 seconds * opening projects 2 times / day * 4 days / week = valuable time! ;)
 
+#TODO: open terminal window with 3 tabs
+# 1. title: meteor, running app of current project
+# 2. title: mongo, running mongo shell of current project
+# 3. title: git, used for git stuff in current project
+
 go2cpd () {
   # go to current project directory
   cd "/home/sam/Documents/github/force-push-arena-2/force-push-arena/"
