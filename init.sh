@@ -19,8 +19,8 @@ nohup firefox localhost:3000 >/dev/null 2>&1 &
 go2cpd
 
 gnome-terminal \
---tab-with-profile=Meteor -t "meteor" -e "meteor" \
---tab-with-profile=Meteor -t "git" -e "bash" \
---tab-with-profile=Meteor -t "mongo" -x bash -c "sleep 5s; meteor mongo"
+--tab-with-profile=Meteor -t "meteor" -e "bash -c 'meteor'" \
+--tab-with-profile=Meteor -t "mongo" -e "bash -c 'sleep 5s; meteor mongo'" \
+--tab-with-profile=Meteor -t "git" -e "bash"
 
 exit 0
