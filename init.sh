@@ -1,16 +1,11 @@
 #!/bin/bash
 
 # Small script that automatically sets up the development environment for my current project
-# saves about 15 seconds * opening projects 2 times / day * 4 days / week = valuable time! ;)
-
-#TODO: open terminal window with 3 tabs
-# 1. title: meteor, running app of current project
-# 2. title: mongo, running mongo shell of current project
-# 3. title: git, used for git stuff in current project
+# saves about 30 seconds * opening projects 2 times / day * 4 days / week = valuable time! ;)
 
 go2cpd () {
   # go to current project directory
-  cd "/home/sam/Documents/github/force-push-arena-2/force-push-arena/"
+  cd "/home/sam/Documents/github/blaze-penguinz"
 }
 
 cur_proj_name="Blaze Penguinz"
@@ -22,6 +17,10 @@ nohup firefox localhost:3000 >/dev/null 2>&1 &
 
 # finally, go to project directory and launch app-processes
 go2cpd
-meteor
+
+gnome-terminal \
+--tab-with-profile=Meteor -t "meteor" -e "meteor" \
+--tab-with-profile=Meteor -t "git" -e "bash" \
+--tab-with-profile=Meteor -t "mongo" -x bash -c "sleep 5s; meteor mongo"
 
 exit 0
