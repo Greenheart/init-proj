@@ -7,7 +7,7 @@ cur_proj_name="blaze-penguinz"
 
 go2cpd () {
   # go to current project directory
-  cd "$HOME/Documents/github/$cur_proj_name"
+  cd "$HOME/Documents/github/$cur_proj_name" || exit 1
 }
 
 echo "Starting $cur_proj_name!"
